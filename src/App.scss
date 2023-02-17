@@ -1,11 +1,29 @@
 .App {
+    transition-duration: 1s;
+
     .container {
         max-width: 20rem;
         min-height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
         margin: auto;
+
+        .wallet {
+            background-color: #009fb7;
+            color: #fff;
+            padding: 3rem;
+            border-radius: 2rem;
+            width: 100%;
+            margin-bottom: 2rem;
+
+            h1 {
+                text-align: center;
+                font-size: 3rem;
+            }
+        }
 
         .actionValue {
             width: 100%;
@@ -17,6 +35,12 @@
         .actions {
             display: flex;
             justify-content: space-between;
+            width: 100%;
         }
     }
+}
+
+.darkApp {
+    transition-duration: 1s;
+    background-color: #4c5454;
 }
